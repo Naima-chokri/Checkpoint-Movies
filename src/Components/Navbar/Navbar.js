@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container, Form, FormControl, Nav, Navbar, NavDropdown, Button} from 'react-bootstrap'
+import Filter from '../Filter/Filter'
+import Filterbyrating from '../Filterbyrating/Filterbyrating'
 import MovieAdd from '../MovieAdd/MovieAdd'
 
-const NavbarAll = ({NewMovie}) => {
+const NavbarAll = ({NewMovie,FilterMovie,FilterMovieByRating}) => {
+  
   return (
     <>
     <Navbar bg="light" expand="lg">
@@ -17,15 +20,9 @@ const NavbarAll = ({NewMovie}) => {
       >
         <MovieAdd NewMovie={NewMovie}/>
       </Nav>
-      <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
+      <Filter FilterMovie={FilterMovie}/>
+      <Filterbyrating FilterMovieByRating={FilterMovieByRating} />
+      
     </Navbar.Collapse>
   </Container>
 </Navbar>

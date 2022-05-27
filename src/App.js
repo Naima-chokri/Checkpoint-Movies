@@ -4,30 +4,42 @@ import {data} from './dataMovies'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieAdd from './Components/MovieAdd/MovieAdd';
 import { useState } from 'react';
-import Filter from './Components/Filter/Filter';
 import Navbar  from './Components/Navbar/Navbar';
 
 function App() {
   const [newData, setNewData] = useState(data)
+  const [filterx, setFilterx] = useState("")
+  const [filterxratingmin, setFilterxratingmin] = useState(0)
+  const [filterxratingmax, setFilterxratingmax] = useState(10)
   const NewMovie=(x)=>{
-   setNewData([...newData,{...x,id:newData.length}])
+   setNewData([...newData,x])
+  // setNewData([...newData,{...x,id:newData.length}])
   } 
-
-  const FilterMovie = (x) =>{
-    console.log(x.title)
-    console.log(newData.filter(el=>el.title.toUpperCase()==x.title.toUpperCase()))
-    //setMoviedata(moviedata.filter(el=>el.title.toUpperCase()==x.title.toUpperCase()))
+  const deleteMovie=(idDel)=>{
+      console.log(idDel)
+  }
+  const FilterMovie = (x) =>{  ///title ta3 input = x
+    setFilterx(x)
+    
+    //
   }
   const handleDclick=()=>{
-    setNewData([])  //array of object
+    setNewData([])  //we can't put null cause it's an array of object and we can't map 'null'
+  }
+  const FilterMovieByRating = (x,y) =>{
+    setFilterxratingmin(x)
+    setFilterxratingmax(y)
   }
   return (
     <div className="App">
-      <h1>Movie List</h1>
-      <Navbar NewMovie={NewMovie} />
-      <Filter FilterMovie={FilterMovie}/>
-     { MovieList.length?<MovieList data={newData}/>:<h1>No Movies</h1>}
-      <button onDoubleClick={handleDclick}>Clear all</button>
+      <Navbar NewMovie={NewMovie} FilterMovie={FilterMovie} FilterMovieByRating={FilterMovieByRating}/>
+      
+     {  <MovieList data={newData.filter(el=>
+      (el.title.toLocaleLowerCase().includes(filterx.trim().toLocaleLowerCase())
+      &&(el.rating>=filterxratingmin)
+      &&(el.rating<=filterxratingmax))
+      )}/> }  
+      {/* <button onDoubleClick={handleDclick}>Clear all</button> */}
        
     </div>
   );

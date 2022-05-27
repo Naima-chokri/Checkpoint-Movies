@@ -13,7 +13,7 @@ export const data = [{
 },{
     id:uuidv4(),
     title:"THE BAD GUYS",
-    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
+    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/hangTmbxpSV4gpHG7MgSlCWSSFa.jpg",
     desc:"When the infamous Bad Guys are finally caught after years of countless heists and being the world's most-wanted villains,Mr. Wolf brokersadeal to save them all from prison.",
     date:2022,
     duration:100,
@@ -23,7 +23,7 @@ export const data = [{
     ,{
     id:uuidv4(),
     title:"ALL THE OLD KNIVES",
-    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/g4tMniKxol1TBJrHlAtiDjjlx4Q.jpg",
+    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
     desc:"When the CIA discovers one of its agents leaked information that cost more than 100 people their lives,veteran operative Henry Pelham is assigned to root out the mole with his former lover and colleague Celia Harrison.",
     date:2022,
     duration:101,
@@ -34,7 +34,7 @@ export const data = [{
     id:uuidv4(),
     title:"SONIC THE HEDGEHOG2",
     urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
-    desc:"After settling in Green Hills,Sonic is eager to prove he has what it takes to bea true hero.His test comes when Dr. Robotnik returns,this time withanew partner, Knuckles,in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick,Tails,and together they embark onaglobe trotting journey to find the emerald before it falls into the wrong hands.",
+    desc:"After settling in Green Hills,Sonic is eager to prove he has what it takes to bea true hero",
     date:2022,
     duration:122,
     genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],

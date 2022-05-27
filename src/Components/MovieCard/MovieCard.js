@@ -8,13 +8,11 @@ const MovieCard = ({title,urlImage, desc, date, duration, genres, actors, rating
     <img src= {urlImage} />
     <div className="descriptions">
       <h1>{title}</h1>
-      <p>
-      {desc}
-      </p>
-      <h3 ><ReactStars value= {rating} /></h3>
+      <ReactStars value= {rating} count={10}/>
+      <p>{desc}</p>
       <button>
         <i className="fab fa-youtube" />
-        More Detailes
+        Show More
       </button>
       
     </div>

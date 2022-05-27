@@ -1,15 +1,24 @@
 import React, { useState } from 'react'
+import {  Form, FormControl, Button} from 'react-bootstrap'
+
 
 const Filter = ({FilterMovie}) => {
   const [title, setTitle] = useState('')
-    const getTitle = (e) =>{
-      setTitle(e.target.value)
-    }
-    FilterMovie({title});
+  const onChange=(e)=>{
+    setTitle((e.target.value))
+  }
+  FilterMovie(title)    //yab3eth data to callback
   return (
-    <div>
-     
-    </div>
+    <Form className="d-flex">
+        Find Movie<FormControl
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+          onChange={onChange}
+          value={title}
+        />
+      </Form>
   )
 }
 
