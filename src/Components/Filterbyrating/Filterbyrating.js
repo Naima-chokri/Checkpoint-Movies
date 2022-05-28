@@ -6,38 +6,43 @@ import {  Form, FormControl, Button} from 'react-bootstrap'
 const Filterbyrating = ({FilterMovieByRating}) => {
   const [ratingmin, setRatingmin] = useState(0)
   const [ratingmax, setRatingmax] = useState(10)
+
     const getRatingmin = (e) =>{
-        setRatingmin(e.target.value)
+      (e.target.value===''?setRatingmin(0):setRatingmin(e.target.value))
+        //setRatingmin(e.target.value)
     }
     const getRatingmax = (e) =>{
-        setRatingmax(e.target.value)
+      (e.target.value===''?setRatingmax(10):setRatingmax(e.target.value))
+        //setRatingmax(e.target.value)
     }
     
     FilterMovieByRating(ratingmin,ratingmax);
   return (
-    <div>
+    <div  style={{display:'flex'}}>
 
       <Form className="inputstyle">
-      Raiting-min:<FormControl
+      <FormControl
+        style={{width: '150px'}}
           type="number"
           id="tentacles" 
           name="tentacles" 
           min="0"
           max="10"
-          placeholder="min"
+          placeholder="Raiting-min"
           className="me-2"
           aria-label="Search"
           onChange={getRatingmin}     
         />
       </Form>
       <Form className="inputstyle">
-      Raiting-max:<FormControl
+      <FormControl
+          style={{width: '150px'}}
           type="number"
           id="tentacles" 
           name="tentacles" 
           min="0"
           max="10"
-          placeholder="max"
+          placeholder="Raiting-max"
           className="me-2"
           aria-label="Search"
           onChange={getRatingmax}     

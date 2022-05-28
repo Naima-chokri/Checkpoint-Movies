@@ -12,7 +12,7 @@ export const data = [{
     rating:6
 },{
     id:uuidv4(),
-    title:"THE BAD GUYS",
+    title:"THE EXORCIM OF GOD",
     urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/hangTmbxpSV4gpHG7MgSlCWSSFa.jpg",
     desc:"When the infamous Bad Guys are finally caught after years of countless heists and being the world's most-wanted villains,Mr. Wolf brokersadeal to save them all from prison.",
     date:2022,
@@ -22,7 +22,7 @@ export const data = [{
     rating:7.8}
     ,{
     id:uuidv4(),
-    title:"ALL THE OLD KNIVES",
+    title:"MOREBIUS",
     urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
     desc:"When the CIA discovers one of its agents leaked information that cost more than 100 people their lives,veteran operative Henry Pelham is assigned to root out the mole with his former lover and colleague Celia Harrison.",
     date:2022,
@@ -32,8 +32,8 @@ export const data = [{
     rating:6
 },{
     id:uuidv4(),
-    title:"SONIC THE HEDGEHOG2",
-    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+    title:"THE OUTFIT",
+    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
     desc:"After settling in Green Hills,Sonic is eager to prove he has what it takes to bea true hero",
     date:2022,
     duration:122,

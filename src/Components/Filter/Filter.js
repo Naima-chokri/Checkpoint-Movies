@@ -10,14 +10,19 @@ const Filter = ({FilterMovie}) => {
   FilterMovie(title)    //yab3eth data to callback
   return (
     <Form className="d-flex">
-        Find Movie<FormControl
+      
+       <FormControl 
+          style={{width: '350px'}}
           type="search"
-          placeholder="Search"
+          placeholder=" Find Movie"
           className="me-2"
           aria-label="Search"
           onChange={onChange}
           value={title}
         />
+         <div className="search-icon">
+          <i class="fas fa-search" />
+        </div>
       </Form>
   )
 }
