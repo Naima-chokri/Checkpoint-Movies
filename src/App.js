@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Navbar  from './Components/Navbar/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Moviedetails from './Components/MovieDetails/Moviedetails';
 
 function App() {
   const [newData, setNewData] = useState(data)
@@ -17,9 +18,9 @@ function App() {
    setNewData([...newData,x])
   // setNewData([...newData,{...x,id:newData.length}])
   } 
-  const deleteMovie=(idDel)=>{
-      console.log(idDel)
-  }
+  // const deleteMovie=(idDel)=>{
+  //     console.log(idDel)
+  // }
   const FilterMovie = (x) =>{  ///title ta3 input = x
     setFilterx(x)
     
@@ -34,19 +35,25 @@ function App() {
   }
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path='/' element={<Home />}> */}
-        {/* <Route path='/' element={<Home />}> */}
-        {/* </Route>
-      </Routes> */}
+      <Routes>
+        <Route path="/"  element={<Home />} />
+        <Route path="/movies"  element={[ <Navbar NewMovie={NewMovie} FilterMovie={FilterMovie} FilterMovieByRating={FilterMovieByRating}/>,
+        <MovieList data={newData.filter(el=>
+            (el.title.toLocaleLowerCase().includes(filterx.trim().toLocaleLowerCase())
+            &&(el.rating>=filterxratingmin)
+            &&(el.rating<=filterxratingmax))
+            )}/> ]} />
+         {/* <Route path="/moviedetails:/id"  element={<Moviedetails  NewMovie={NewMovie}/>} /> */}
+         <Route path="/moviedetails/:id" element={<Moviedetails data={data}/>}/>
+      </Routes>
 
-    <Navbar NewMovie={NewMovie} FilterMovie={FilterMovie} FilterMovieByRating={FilterMovieByRating}/>
-      
-     <MovieList data={newData.filter(el=>
+    {/* <Navbar NewMovie={NewMovie} FilterMovie={FilterMovie} FilterMovieByRating={FilterMovieByRating}/>
+       */}
+     {/* <MovieList data={newData.filter(el=>
       (el.title.toLocaleLowerCase().includes(filterx.trim().toLocaleLowerCase())
       &&(el.rating>=filterxratingmin)
       &&(el.rating<=filterxratingmax))
-      )}/> 
+      )}/>  */}
        {/* <button onDoubleClick={handleDclick}>Clear all</button>  */}
        
     </div>

@@ -40,5 +40,26 @@ export const data = [{
     genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],
     actors:["BEN", "SCHWARTZ", "IDRIS", "ELBA", "COLLEEN", "O'SHAUGHNESSEY", "JIM", "CARREY"],
     rating:7.8
+},{
+    id:uuidv4(),
+    title:"THE OUTFIT",
+    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
+    desc:"After settling in Green Hills,Sonic is eager to prove he has what it takes to bea true hero",
+    date:2022,
+    duration:122,
+    genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],
+    actors:["BEN", "SCHWARTZ", "IDRIS", "ELBA", "COLLEEN", "O'SHAUGHNESSEY", "JIM", "CARREY"],
+    rating:7.8
+}
+,{
+    id:uuidv4(),
+    title:"THE OUTFIT",
+    urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg",
+    desc:"After settling in Green Hills,Sonic is eager to prove he has what it takes to bea true hero",
+    date:2022,
+    duration:122,
+    genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],
+    actors:["BEN", "SCHWARTZ", "IDRIS", "ELBA", "COLLEEN", "O'SHAUGHNESSEY", "JIM", "CARREY"],
+    rating:7.8
 }
 ]

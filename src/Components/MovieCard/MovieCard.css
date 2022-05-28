@@ -6,17 +6,7 @@ body{
     height:100vh;
     font-family: 'Lato';
   }
-  .wrapper{
-    position: absolute;
-    margin-top: -150px;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width:100%;
-    height:auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+ 
   .card{
     flex: 1;
     flex-basis: 300px;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Form, FormControl, Nav, Navbar, NavDropdown, Button} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Filter from '../Filter/Filter'
 import Filterbyrating from '../Filterbyrating/Filterbyrating'
 import MovieAdd from '../MovieAdd/MovieAdd'
@@ -13,6 +14,13 @@ const NavbarAll = ({NewMovie,FilterMovie,FilterMovieByRating}) => {
     <Navbar.Brand href="#"></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
+      <Nav
+        className="me-auto my-2 my-lg-0"
+        style={{ maxHeight: '100px' }}
+        navbarScroll
+      >
+       <Link to="/"> <Button>Home</Button></Link>
+      </Nav>
       <Nav
         className="me-auto my-2 my-lg-0"
         style={{ maxHeight: '100px' }}
