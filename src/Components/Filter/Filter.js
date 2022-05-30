@@ -14,15 +14,12 @@ const Filter = ({FilterMovie}) => {
        <FormControl 
           style={{width: '350px'}}
           type="search"
-          placeholder=" Find Movie"
+          placeholder="Search Movie"
           className="me-2"
           aria-label="Search"
           onChange={onChange}
           value={title}
-        />
-         <div className="search-icon">
-          <i class="fas fa-search" />
-        </div>
+        />   
       </Form>
   )
 }

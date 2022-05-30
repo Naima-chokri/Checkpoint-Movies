@@ -23,8 +23,8 @@ const Home = () => {
       <div className="row wow fadeIn">
         {/*Grid column*/}
         <div className="col-md-12 mb-4 white-text text-center wow fadeIn">
-          <h3 className="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Creative Agency</h3>
-          <h4 className="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
+          <h3 className="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Unlimited movies, TV shows, and more.</h3>
+          <h4 className="subtext-header mt-2 mb-4">Watch anywhere. Cancel anytime.</h4>
           <Link to="movies"> <a href="#!" className="btn btn-rounded btn-outline-white">
             <i className="fa fa-home" /> Visit us
           </a> </Link>

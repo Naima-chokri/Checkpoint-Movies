@@ -49,3 +49,12 @@ z-index: -1;
 .white-text{
 margin-top: 5%;
 }
+.btn-details{
+  background-color: mistyrose;
+  float: left;
+}
+.btn-details:hover {
+  color: #000;
+  background-color: mistyrose;
+  border-color: mistyrose;
+}

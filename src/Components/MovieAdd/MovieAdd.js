@@ -29,7 +29,7 @@ const MovieAdd = ({NewMovie}) => {
     
   return (
     <>
-      <Button variant="primary" onClick={handleShow} style={{ width: '150px'}}>
+      <Button variant="primary" onClick={handleShow} style={{ width: '150px',  borderColor: 'mistyrose'}}>
         Add Movie
       </Button>
 

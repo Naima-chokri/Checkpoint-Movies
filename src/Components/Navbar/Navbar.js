@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Filter from '../Filter/Filter'
 import Filterbyrating from '../Filterbyrating/Filterbyrating'
 import MovieAdd from '../MovieAdd/MovieAdd'
+import './Navbar.css'
 
 const NavbarAll = ({NewMovie,FilterMovie,FilterMovieByRating}) => {
   
