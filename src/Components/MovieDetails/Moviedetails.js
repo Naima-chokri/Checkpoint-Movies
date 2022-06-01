@@ -67,6 +67,13 @@ const Moviedetails = ({data}) => {
         </div>
       </div>
     </div>
+    <div className="row m-0">
+      <div className="col-lg-12 left-side-product-box pb-3">
+        {/* <img src={datadetails.trailerSrc} className="border p-3" /> */}
+        <iframe width="560" height="315" src={datadetails.trailerSrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  
+    </div>
   </div>
 </div>
 

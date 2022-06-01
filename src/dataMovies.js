@@ -10,7 +10,8 @@ export const data = [{
         duration:122,
         genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],
         actors:["Al Pacino", " Marlon Brando", " Diane Keaton", " Robert De Niro", " James Caan"],
-        rating:8.8
+        rating:8.8,
+        trailerSrc: "https://www.youtube.com/embed/UaVTIH8mujA"
     },{
     id:uuidv4(),
     title:"ALL THE OLD KNIVES",
@@ -20,7 +21,8 @@ export const data = [{
     duration:101,
     genres:["THRILLER","ACTION"],
     actors:["CHRIS PINE", "THANDIWE NEWTON", "JONATHAN PRYCE", "LAURENCE FISHBURNE"],
-    rating:5.5
+    rating:5.5,
+    trailerSrc: "https://www.youtube.com/embed/6s7NziAetNs"
 },{
     id:uuidv4(),
     title:"THE EXORCIM OF GOD",
@@ -30,8 +32,9 @@ export const data = [{
     duration:100,
     genres:["ANIMATION","COMEDY","ACTION","FAMILY"],
     actors:["SAM ", "ROCKWELL", "MARC", "MARON", "AWKWAFINA", "CRAIG", "ROBINSON"],
-    rating:6}
-    ,{
+    rating:6,
+    trailerSrc: "https://www.youtube.com/embed/Soxe-QkMd1A"
+},{
     id:uuidv4(),
     title:"MOREBIUS",
     urlImage:"https://image.tmdb.org/t/p/w370_and_h556_bestv2/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
@@ -40,7 +43,8 @@ export const data = [{
     duration:101,
     genres:["THRILLER","ACTION"],
     actors:["CHRIS PINE", "THANDIWE NEWTON", "JONATHAN PRYCE", "LAURENCE FISHBURNE"],
-    rating:6.6
+    rating:6.6,
+    trailerSrc: "https://www.youtube.com/embed/oZ6iiRrz1SY"
 },{
     id:uuidv4(),
     title:"THE OUTFIT",
@@ -50,7 +54,8 @@ export const data = [{
     duration:122,
     genres:["ACTION","SCIENCE FICTION","COMEDY","FAMILY"],
     actors:["BEN", "SCHWARTZ", "IDRIS", "ELBA", "COLLEEN", "O'SHAUGHNESSEY", "JIM", "CARREY"],
-    rating:6.8
+    rating:6.8,
+    trailerSrc: "https://www.youtube.com/embed/3UgJL23HxyU"
 }
 ,{
     id:uuidv4(),
@@ -61,6 +66,7 @@ export const data = [{
     duration:122,
     genres:["ADVENTURE"," FANTASY","COMEDY","ACTION"],
     actors:["JOHNNY DEEP", "PRLANDO BLOOM", "KEIRA KNIGHTLEY", "STELLAN SKARSGARD"],
-    rating:7.8
+    rating:7.8,
+    trailerSrc: "https://www.youtube.com/embed/Hgeu5rhoxxY"
 }
 ]
